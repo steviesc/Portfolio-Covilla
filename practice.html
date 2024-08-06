@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .fork {
+        position: relative;
+        width: 100px;
+        height: 100px;
+      }
+
+      .fork:before,
+      .fork:after {
+        content: "";
+        position: absolute;
+        background-color: black;
+      }
+
+      /* 叉柄 */
+      .fork:before {
+        width: 10px;
+        height: 60px;
+        top: 20px;
+        left: 45px;
+      }
+
+      /* 叉头 */
+      .fork:after {
+        width: 60px;
+        height: 10px;
+        top: 45px;
+        left: 20px;
+      }
+
+      /* 风格化 */
+      .fork:before {
+        transform: rotate(45deg);
+      }
+
+      .fork:after {
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fork"></div>
+  </body>
+</html>
